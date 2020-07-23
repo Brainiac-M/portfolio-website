@@ -1,0 +1,69 @@
+@media screen and (min-width:660px) {
+    /*===============================
+    TWO COLUMN LAYOUT
+    CONTACT PAGE
+    ==================================*/
+    #primary {
+        width: 50%;
+        float: left;
+    }
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+    /*===============================
+    
+    THREE COLUMN  LAYOUT
+    PORTFOLIO PAGE
+    3 * width of each element
+    margin=2.5% on both sides of each element
+    3 * (2.5 *2)= 15%
+    remaining width = 100- 15= 85%
+    each element will have 85/3 = 28.333333333%
+
+    ==================================*/
+    #gallery li {
+        width: 28.333333333%;
+    }
+    #gallery li:nth-child(n) {
+        clear: right;
+    }
+    /*===============================
+    ABOUT PAGE
+    ==================================*/
+    .profile-photo {
+        float: left;
+        margin: 0 5% 50px 0;
+    }
+}
+
+@media screen and (min-width:900px) {
+    /*===============================
+    HEADER
+    ==================================*/
+    nav {
+        background: none;
+        float: right;
+        font-size: 1.25em;
+        margin-right: 5%;
+        text-align: right;
+        width: 40%;
+    }
+    #logo {
+        float: left;
+        margin-left: 3.5%;
+        text-align: left;
+        width: 40%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 0.83em;
+        margin-bottom: 20px;
+    }
+    header {
+        border-bottom: 5px solid #599a68;
+        margin-bottom: 60px;
+    }
+}
